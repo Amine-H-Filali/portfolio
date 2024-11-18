@@ -3,9 +3,9 @@ import { Metadata } from 'next'
 // TODO: Update metadata
 
 export function constructMetadata({
-  title = 'Chris Lonzo', // TODO: Add a custom title
-  description = "I am a software engineer with a passion for building scalable and efficient web applications.", // TODO: Add a custom description
-  image = '/thumbnail.png', // TODO: Add a custom image
+  title = 'Amine Hmidani Filali', // TODO: Add a custom title
+  description = "Étudiant en MQL, passionné de développement, maîtrisant Java, NodeJS, React, recherchant un stage innovant.", // TODO: Add a custom description
+  image = '/profilepicture.jpg', // TODO: Add a custom image
   icons = '/avatar.svg', // TODO: Add a custom icon
   noIndex = false
 }: {
