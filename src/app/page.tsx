@@ -2,6 +2,7 @@ import { Sidebar } from "@/components/Sidebar";
 import { AboutMe } from "@/components/AboutMe";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
+import {RagBot} from "@/components/RagBot"
 
 export default function Home() {
   return (
@@ -14,7 +15,10 @@ export default function Home() {
           <main className="md:col-span-2">
             {/* About Me Section */}
             <AboutMe />
+             {/* Rag Bot Section */}
+             <RagBot />
             {/* Projects Section */}
+        
             <Projects />
             {/* Experience Section */}
             <Experience />
