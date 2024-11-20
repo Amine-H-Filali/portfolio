@@ -6,7 +6,7 @@ import Groq from "groq-sdk";
 
 // Initialisez l'instance Groq
 const groq = new Groq({
-  apiKey: process.env.GROQ_API_KEY, // Assurez-vous que cette variable est définie dans `.env.local`
+  apiKey: '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', // Assurez-vous que cette variable est définie dans `.env.local`
 });
 
 // Fonction pour lire et analyser le contenu du fichier PDF
