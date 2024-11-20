@@ -6,7 +6,7 @@ import Groq from "groq-sdk";
 
 // Initialisez l'instance Groq
 const groq = new Groq({
-  apiKey: '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', // Assurez-vous que cette variable est définie dans `.env.local`
+  apiKey: process.env.GROQ_API_KEY, // Assurez-vous que cette variable est définie dans `.env.local`
 });
 
 // Fonction pour lire et analyser le contenu du fichier PDF
@@ -17,6 +17,10 @@ async function extractTextFromPdf(pdfPath: string): Promise<string> {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+
+  res.setHeader("Access-Control-Allow-Origin", "*"); // Changez '*' pour des domaines spécifiques si nécessaire
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   if (req.method === "POST") {
     const { question } = req.body;
 
